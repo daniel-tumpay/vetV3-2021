@@ -1,0 +1,282 @@
+* {
+    box-sizing: border-box;
+	margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'open sans';
+}
+
+header{
+	width: 100%;
+	height: 365px;
+	background: linear-gradient(to right, #10aef798, #12d4a3); /*url(perritos.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-size: cover; /**/
+	background-attachment: fixed;
+	position: relative;
+}
+
+header .textos-header{
+    display: flex;
+    height: 200px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color:#fff;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color:#fff;
+}
+
+header .textos-header{
+    display: flex;
+    height: 200px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color:#fff;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color:#fff;
+}
+
+.ola{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.container {
+	width: 450px;
+	margin: 30px auto;
+	
+}
+
+.signup, .login {
+	width: 50%;
+	margin-bottom: 40px;
+	margin-top: 30px;
+	background: rgb(236, 236, 236);
+	float: left;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	cursor: pointer;
+	text-transform: uppercase;
+	border-radius: 30px;
+	font-weight: bold;
+}
+
+.signup-form, .login-form {
+	background: #fff;
+	padding: 40px;
+	clear: both;
+	width: 100%;
+	box-sizing: border-box;
+	height: 400px;
+	border-radius: 20px;
+}
+
+span a {
+	text-decoration: none;
+	color: #34b3a0;
+	font-weight: bold;
+}
+
+span a:hover{
+	text-decoration: underline;
+}
+
+
+main {
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+    padding: 40px;
+}
+nav{
+	text-align: right;
+	padding: 25px 50px 0 0;
+}
+
+nav > a{
+	color:#fff; 
+	font-weight: 500; /*Grosor*/
+	text-decoration: none; /*sin subrayado*/
+	margin-right: 10px; /*separado entre objetos*/
+}
+
+nav > a:hover{/*sobre texto*/
+	text-decoration: underline;
+}
+
+
+
+.formulario__label {
+    display: block;
+	font-weight: 700;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.formulario__grupo-input {
+	position: relative;
+}
+
+.formulario__input {
+	width: 100%;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+}
+
+.formulario__input:focus {
+	border: 3px solid #0075FF;
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+}
+
+.formulario__checkbox {
+	margin-right: 10px;
+}
+
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+}
+
+.boton {
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.btn {
+    height: 45px;
+	line-height: 45px;
+	width: 30%;
+	background: #000;
+	color: #fff;
+	font-weight: bold;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .1s ease all;
+}
+
+.btn:hover {
+    box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
+@media screen and (max-width: 800px) {
+	.container {
+		grid-template-columns: 1fr;
+	}
+
+	.boton {
+		width: 100%;
+	}
+}
+
+/* youtube link */
+.youtube {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	width: 100px;
+	text-align: center;
+	padding: 15px 10px;
+	background: #0067bb;
+	border-radius: 5px;
+  }
+  
+  .youtube a {
+	text-decoration: none;
+	color: #fff;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+  }

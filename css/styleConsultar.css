@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans';
+    
+}
+
+header{
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to right, #10aef798, #12d4a3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover; /**/
+    background-attachment: fixed;
+    position: relative;
+}
+
+header .textos-header{
+    display: flex;
+    height: 200px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 30px;
+    font-weight: 100;
+    color:#fff;
+}
+
+.textos-header h2{
+    font-size: 50px;
+    color:#fff;
+}
+
+.content-consultar h2{
+    margin-top: -70px;
+    font-size: 40px;
+    color:rgb(13, 187, 120);
+}
+
+nav{
+    text-align: right;
+    padding: 25px 50px 0 0;
+}
+
+nav > a{
+    color:#fff; 
+    font-weight: 500; /*Grosor*/
+    text-decoration: none; /*sin subrayado*/
+    margin-right: 10px; /*separado entre objetos*/
+}
+
+nav > a:hover{/*sobre texto*/
+    text-decoration: underline;
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedorphp{
+    padding: 30px 150px 30px 150px;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 5px;
+    border:groove darkturquoise;
+    text-align: center;
+}
+
+.content-consultar{
+    text-align: center;
+    font-size: 20px;
+    width: 60%;
+    padding: 10px 20px 30px 20px;
+    border-radius: 30px;
+    margin: auto;
+}
+
+ .content-consultar:hover >form { /*Efecto de selección Gris */
+    background: rgb(235, 234, 234);
+    border-radius: 30px;
+}
+
+.busqueda{
+    margin-top: 40px;
+}
+
+
+
+.busqueda > input{ 
+    font-size: 20px;
+    border: none;
+    border-bottom: 4px solid rgb(37, 146, 92);
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background: rgb(248, 248, 248);
+}
+.botonBuscar > input{
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 175px;
+    height: 54px;
+    border-radius: 8px;
+    background: linear-gradient(to right, #10aef798,#12d4a3) ;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+}
+
+.botones{
+    text-align: center;
+}
+.btn{
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 175px;
+    height: 54px;
+    border-radius: 8px;
+    background: linear-gradient(to right, #10aef798,#12d4a3) ;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold; 
+    letter-spacing: 1px; 
+}

@@ -1,0 +1,30 @@
+.contenedorphp{
+    padding: 30px 150px 30px 150px;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 5px;
+    border:dotted rgb(218, 115, 19);
+    padding-left: 200px;
+
+}
+
+.botones{
+    padding-top: 50px;
+    text-align: center;
+}
+
+.btn{
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 175px;
+    height: 54px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold; 
+    letter-spacing: 1px; 
+}

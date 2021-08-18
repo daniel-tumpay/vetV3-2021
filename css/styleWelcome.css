@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans';
+}
+
+main {
+    display: block;
+}
+
+.contenedor {
+    padding: 10px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.gen > input {
+    width: 30px;
+}
+
+.animate__animated.animate__flipInY{
+    color:#12d4a3;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 60px;
+    --animate-duration: 2s;
+}
+
+.animate__animated.animate__slideInDown{
+    --animate-duration: 1s;
+}
+/*ENCABEZADO*/
+header{
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(to right, #10aef798, #12d4a3); /*url(perritos.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover; /**/
+    background-attachment: fixed;
+    position: relative;
+    
+}
+
+nav{
+    text-align: right;
+    padding: 25px 50px 0 0;
+}
+ nav > a{
+    color:#fff; 
+    font-weight: 500; /*Grosor*/
+    text-decoration: none; /*sin subrayado*/
+    margin-right: 10px; /*separado entre objetos*/
+ }
+ nav > a:hover{/*sobre texto*/
+     text-decoration: underline;
+ }
+
+.username h1{
+    color:#fff;
+    padding: 0px 23px 0 20px;
+    text-align: left;
+    font-size: 45px;
+ }
+
+.username p {
+        font-size: 25px;
+        color: rgb(23, 30, 98);
+}
+
+ header .textos-header{
+    display: flex;
+    height: 200px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color:#fff;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color:#fff;
+}
+
+.ola{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/*Pie de pagina*/
+footer{
+    background: linear-gradient(to right, #10aef798, #229075);
+    padding: 30px 0 30px 0;
+    margin: auto; /*centrar todo*/
+    overflow: hidden;
+}
+
+.contenedor-pie{
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px ;
+    
+    margin: auto;
+}
+
+.content-foo{ /* tamaño de las pestañas del pie de pag*/
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.content-foo a{
+    color: #fff;
+    border-bottom: 3px solid rgb(17, 111, 165);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+
+    font-weight: 300; /*mas delgado*/
+    text-decoration: none; /*sin subrayado azul*/
+    margin-right: 10px; /*separado entre ellos*/
+}
+
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.titulo-final a {
+    color: #fff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 300; /*mas delgado*/
+    text-decoration: none; /*sin subrayado azul*/
+    margin-right: 10px; /*separado entre ellos*/
+}
+.content-foo > a:hover{
+    border-bottom: 3px solid #b0e4ba;
+}
+/*Datos*/
+.content-datos{
+    text-align: center;
+    font-size: 20px;
+    padding: 3px;
+    background: linear-gradient(to right, #e4e6e798, #e6e2e9), url(../img/perritos.jpg);
+
+}
+
+.contenido-texto{
+    text-align: center;
+    padding: 10px 10px 30px 10px;
+    font-weight: 300;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 26px;
+    border-radius: 15px;
+    
+}
+.contenido-texto:hover{ /*Efecto de selección Gris */
+    background: rgb(235, 234, 234);
+}
+
+.contenido-texto h2{
+    color: rgb(17, 120, 100);
+    font-size: 25px;
+}
+.contenido-texto > input { /* Contenido */
+    font-size: 20px;
+    border: none;
+    border-bottom: 4px solid rgb(37, 146, 92);
+    text-align: center;
+    width: 193px;
+    height: 35px;
+    border-radius: 5px;
+}
+
+.contenido-texto > select{ /*Select ComboBox */
+    font-size: 20px;
+    border: none;
+    border-bottom: 4px solid rgb(37, 146, 92);
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.gen > input { /* Contenido */
+    font-size: 20px;
+    border: none;
+    /*border-bottom: 1.5px solid rgb(37, 146, 92);*/
+    text-align: center;
+    width: 50px;
+    height: 20px;
+}
+.gen > label { /*Etiqueta */
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.combobox > option { /* */
+    font-size: 18px;
+    border: none;
+    /*border-bottom: 1.5px solid rgb(37, 146, 92);*/
+    text-align: center;
+    width: 50px;
+    height: 20px;
+}
+
+.btn{
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 175px;
+    height: 54px;
+    border-radius: 8px;
+    background: linear-gradient(to right, #10aef798,#12d4a3) ;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+}
+/*#boton{ Estilo del boton CALCULAR 
+    font-size: 35px;
+    margin-bottom: 41px;
+    width: 200px;
+    height: 80px;
+    border-radius: 8px;
+    background: linear-gradient(to right, #10aef798,#12d4a3) ;
+    border: none;
+    cursor: pointer;
+    
+}*/
+
+#respuesta{ /*El imc y la recomendacion */
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+.img{ /*tabla IMC */
+    display:block;
+    margin:auto;
+}
+
